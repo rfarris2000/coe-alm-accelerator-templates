@@ -135,7 +135,7 @@ stages:
         inputs:
           authenticationType: PowerPlatformSPN
           PowerPlatformSPN: ${{parameters.ServiceConnectionName}}
-          SolutionInputFile: '$(Pipeline.Workspace)\${{parameters.SolutionName}}.zip'
+          SolutionInputFile: '$(Pipeline.Workspace)\exported\${{parameters.SolutionName}}.zip'
           OverwriteUnmanagedCustomizations: true
           PublishWorkflows: false
           ConvertToManaged: true
